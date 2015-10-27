@@ -1,0 +1,27 @@
+// Primary navigation styles - both 'desktop' and 'mobile' views
+// --------------------------------------------------------------------------
+
+// Hide the menu on mobile, show on desktop.
+.primary-menu {
+	display: none;
+
+	@include kp-mq(sm) {
+		display: block;
+	}
+
+	// Show the menu on mobile if toggled.
+	.toggled & {
+		@include kp-mq(sm-max) {
+			display: block;
+		}
+	}
+}
+
+// Show the menu toggle on mobile.
+.menu-toggle {
+	display: inline-block;
+
+	@include kp-mq(sm) {
+		display: none;
+	}
+}

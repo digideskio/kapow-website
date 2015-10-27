@@ -1,0 +1,42 @@
+// Entry header, content and footer styles
+// --------------------------------------------------------------------------
+
+// Entry/Page Header
+// -------------------------------------
+
+.entry-header,
+.page-header {}
+
+.entry-title,
+.page-title {}
+
+.entry-meta {}
+
+// Entry/Page Content
+// -------------------------------------
+
+.entry-content,
+.page-content {
+	blockquote {
+		border-left: 4px solid $kp-colour-content--copy;
+		padding-left: kp-rem(24px);
+	}
+
+	dl {
+		padding-left: kp-rem(24px);
+	}
+
+	li {
+		margin-bottom: kp-rem(10px);
+	}
+}
+
+// Entry Summary
+// -------------------------------------
+
+.entry-summary {}
+
+// Entry Footer
+// -------------------------------------
+
+.entry-footer {}

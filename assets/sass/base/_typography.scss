@@ -1,0 +1,130 @@
+// Typographic styles
+// --------------------------------------------------------------------------
+// The goal is to control as much of the base typography as possible from
+// within this file e.g. family/size/weight/style, line-height, colour etc
+// --------------------------------------------------------------------------
+
+a {
+	color: $kp-colour-content--link;
+
+	@include kp-on-event {
+		color: $kp-colour-content--link-hover;
+	}
+}
+
+address {
+	font-style: normal;
+}
+
+b,
+dt,
+strong {
+	font-weight: $kp-font-weight--bold;
+}
+
+blockquote {
+	p {
+		font-size: kp-rem($kp-font-size--large);
+		font-style: italic;
+	}
+}
+
+body {
+	text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $kp-colour-content--copy;
+	font-family: $kp-font-stack--copy;
+	font-size: kp-rem($kp-font-size--medium);
+	line-height: $kp-line-height--copy;
+}
+
+code,
+kbd,
+pre,
+tt,
+var {
+	font-family: $kp-font-stack--code;
+	font-size: kp-rem($kp-font-size--medium);
+	line-height: $kp-line-height--code;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+figcaption,
+small {
+	font-size: kp-rem($kp-font-size--small);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $kp-colour-content--heading;
+	font-family: $kp-font-stack--heading;
+	font-weight: $kp-font-weight--bold;
+	line-height: $kp-line-height--heading;
+
+	a {
+		color: $kp-colour-content--heading;
+	}
+}
+
+h1 {
+	font-size: kp-rem($kp-font-size--h1);
+}
+
+h2 {
+	font-size: kp-rem($kp-font-size--h2);
+}
+
+h3 {
+	font-size: kp-rem($kp-font-size--h3);
+}
+
+h4 {
+	font-size: kp-rem($kp-font-size--h4);
+}
+
+h5 {
+	font-size: kp-rem($kp-font-size--h5);
+}
+
+h6 {
+	font-size: kp-rem($kp-font-size--h6);
+}
+
+html {
+	font-size: kp-rem($kp-font-size--large);
+	text-rendering: optimizeLegibility;
+
+	@include kp-mq(md) {
+		font-size: kp-rem($kp-font-size--medium);
+	}
+}
+
+ins,
+mark {
+	text-decoration: none;
+}
+
+li,
+p {
+	font-size: kp-rem($kp-font-size--medium);
+}
+
+pre {
+	color: $kp-colour-content--pre;
+}

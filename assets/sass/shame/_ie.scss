@@ -1,0 +1,38 @@
+// IE specific hacks and workarounds
+// -----------------------------------------------------------------------------
+
+// Any version
+// -------------------------------------
+
+.ie {}
+
+// Specific versions
+// -------------------------------------
+
+.ie9 {}
+
+.ie8 {}
+
+.ie7 {}
+
+// Lower than specific versions
+// -------------------------------------
+
+.lt-ie9 {
+	@if $kp-framework == "foundation" {
+		// Foundation Grid Columns
+		.columns {
+			padding-left: kp-rem(strip-unit($column-gutter) * strip-unit($kp-base--font-size) / 2);
+			padding-right: kp-rem(strip-unit($column-gutter) * strip-unit($kp-base--font-size) / 2);
+		}
+	}
+}
+
+// Border box polyfill
+.lt-ie8 {
+	*,
+	*:before,
+	*:after {
+		*behavior: url(/polyfills/boxsizing.htc);
+	}
+}

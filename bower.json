@@ -1,0 +1,32 @@
+{
+	"name": "kapow-website",
+	"version": "1.0.0",
+	"authors": [
+		"Make Do"
+	],
+	"license": "MIT",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components"
+	],
+	"dependencies": {
+		"foundation": "5.5.2",
+		"bootstrap-sass": "3.3.4",
+		"bourbon": "4.2.3",
+		"neat": "1.7.2",
+		"html5shiv": "latest",
+		"respondJS": "latest",
+		"selectivizr": "latest",
+		"es5-shim": "latest",
+		"modernizr": "latest",
+		"underscore": "latest",
+		"normalize-scss": "latest",
+		"fontawesome": "latest",
+		"jquery-ui": "latest",
+		"masonry": "latest",
+		"imagesloaded": "latest",
+		"matchHeight": "latest"
+	}
+}

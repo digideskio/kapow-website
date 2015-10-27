@@ -1,0 +1,55 @@
+// Form styles
+// --------------------------------------------------------------------------
+
+// Form fields
+// -------------------------------------
+[type="tel"],
+[type="text"],
+[type="email"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="url"],
+textarea {
+	background-color: $kp-colour-form--input-bg;
+	border: 1px solid $kp-colour-form--input-border;
+	color: $kp-colour-form--input;
+	padding: kp-rem(8px);
+	transition: background-color ease-in-out 0.3s, border-color ease-in-out 0.3s, color ease-in-out 0.3s;
+
+	&:focus {
+		background-color: $kp-colour-form--input-focus-bg;
+		border-color: $kp-colour-form--input-focus-border;
+		color: $kp-colour-form--input-focus;
+	}
+}
+
+select {
+	border: 1px solid $kp-colour-form--input-border;
+	color: $kp-colour-form--input;
+	padding: kp-rem(5px);
+}
+
+// Submit buttons
+// -------------------------------------
+[type="reset"],
+[type="submit"] {
+	background-color: $kp-colour-form--input-submit-bg;
+	border: 0;
+	color: $kp-colour-form--input-submit;
+	padding: kp-rem(5px);
+
+	@include kp-on-event {
+		background-color: darken($kp-colour-form--input-submit-bg, 20%);
+	}
+}
+
+// Placeholder styles
+// -------------------------------------
+input {
+	@include kp-placeholder-styles($kp-ph-styles);
+}
+
+textarea {
+	@include kp-placeholder-styles($kp-ph-styles);
+}

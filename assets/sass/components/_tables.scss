@@ -1,0 +1,24 @@
+// Table styles
+// --------------------------------------------------------------------------
+
+// Useful width helper classes
+// NB: Should be used on <th> & <td>
+// instead of hard coding width values
+// to prevent WCAG validation errors.
+// ------------------------------------
+
+.tbl-25 {
+	width: 25%;
+}
+
+.tbl-50 {
+	width: 50%;
+}
+
+.tbl-75 {
+	width: 75%;
+}
+
+.tbl-100 {
+	width: 100%;
+}

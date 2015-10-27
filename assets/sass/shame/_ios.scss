@@ -1,0 +1,15 @@
+// iOS specific hacks and workarounds
+// -----------------------------------------------------------------------------
+
+// Reset form field appearance for a
+// standard look across all browsers
+// -------------------------------------
+[type="email"],
+[type="password"]
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"] {
+	appearance: none;
+	border-radius: 0;
+}
