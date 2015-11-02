@@ -59,30 +59,33 @@ Text Domain: kapow-website
 
 // Components
 // -------------------------------------
-@import "components/accordions";
-@import "components/breadcrumbs";
+// @import "components/accordions";
+// @import "components/breadcrumbs";
 @import "components/buttons";
-@import "components/carousels";
+
+// @import "components/carousels";
 @import "components/content";
 @import "components/embeds";
 @import "components/forms";
-@import "components/images";
-@import "components/modals";
+
+// @import "components/images";
+// @import "components/modals";
 @import "components/navigation";
-@import "components/pagination";
-@import "components/panels";
-@import "components/sliders";
-@import "components/tabs";
-@import "components/tables";
-@import "components/widgets";
+
+// @import "components/pagination";
+// @import "components/panels";
+// @import "components/sliders";
+// @import "components/tabs";
+// @import "components/tables";
+// @import "components/widgets";
 
 // Pages
 // -------------------------------------
-@import "pages/home";
+// @import "pages/home";
 
 // Themes
 // -------------------------------------
-@import "themes/sections";
+// @import "themes/sections";
 
 // States
 // -------------------------------------
