@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------
 
 // Either 'bootstrap', 'foundation' or 'bourbon'. Defaults to no framework
-$kp-framework: noframework !default;
+$kp-framework: bourbon !default;
 
 // Import our 'plumbing' settings so Kapow!'s Sass variables override some of
 // the important framework settings such as columns, row width etc
@@ -24,7 +24,7 @@ $kp-framework: noframework !default;
 
 // Bootstrap
 // -------------------------------------
-@if ($kp-framework == 'bootstrap') {
+@if $kp-framework == "bootstrap" {
 	// Add overrides here.
 	.container {
 		max-width: $kp-base--container-width;
@@ -34,6 +34,6 @@ $kp-framework: noframework !default;
 
 // Foundation
 // -------------------------------------
-@if ($kp-framework == 'foundation') {
+@if $kp-framework == "foundation" {
 	// Add overrides here.
 }
