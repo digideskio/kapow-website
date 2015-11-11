@@ -22,24 +22,60 @@
  */
 function kapow_website_create_meta_boxes( array $meta_boxes ) {
 
-	// Example field.
-	$example_fields = array(
+	$home_fields = array(
 		array(
-		    'id'   => 'example-field-text',
-		    'name' => 'A simple text input',
-		    'type' => 'text',
+			'id'   => 'section-title',
+			'name' => __( 'Title', 'kapow-website' ),
+			'type' => 'text',
+		),
+		array(
+			'id'   => 'section-content',
+			'name' => __( 'Content', 'kapow-website' ),
+			'type' => 'wysiwyg',
+			'options' => array(
+				'textarea_rows' => 10,
+			),
+		),
+		array(
+			'id'   => 'section-image',
+			'name' => __( 'Image', 'kapow-website' ),
+			'type' => 'image',
+			'size' => 'height=280&width=280&crop=1',
+		),
+		array(
+			'id'   => 'section-button-one-label',
+			'name' => __( 'Button #1 Label', 'kapow-website' ),
+			'type' => 'text',
+			'cols' => 6,
+		),
+		array(
+			'id'   => 'section-button-one-link',
+			'name' => __( 'Button #1 Link', 'kapow-website' ),
+			'type' => 'text',
+			'cols' => 6,
 		),
 	);
 
-	// Example meta box.
+	$home_sections = array(
+		array(
+			'id'   => 'home-section',
+			'name' => __( 'Home Section', 'kapow-website' ),
+			'type' => 'group',
+			'fields' => $home_fields,
+			'repeatable' => true,
+			'repeatable_max' => 10,
+		),
+	);
+
 	$meta_boxes[] = array(
-		'title'    => __( 'Example Meta Box', 'kapow-website' ),
-		'pages'    => array( 'page', 'post' ),
+		'title'    => __( 'Homepage Sections', 'kapow-website' ),
+		'pages'    => array( 'page' ),
+		'show_on'  => array( 'id' => array( '2' ) ),
 		'context'  => 'normal',
 		'priority' => 'high',
-		'fields'   => $example_fields,
+		'fields'   => $home_sections,
 	);
 
 	return $meta_boxes;
 }
-//add_filter( 'cmb_meta_boxes', 'kapow_website_create_meta_boxes' );
+add_filter( 'cmb_meta_boxes', 'kapow_website_create_meta_boxes' );

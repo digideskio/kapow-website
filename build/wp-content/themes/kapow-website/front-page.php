@@ -15,13 +15,27 @@ get_header(); ?>
 
 		<?php do_action( 'kapow_website_before_main_content' ); ?>
 
-		<?php get_template_part( 'template-parts', 'splash' ); ?>
+		<?php get_template_part( 'template-parts/splash' ); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<section class="intro-wrap wrap grey" aria-labelledby="intro-section-title">
 
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<div class="intro row">
 
-		<?php endwhile; ?>
+				<div class="col sm12">
+
+					<?php while ( have_posts() ) : the_post(); ?>
+
+						<?php get_template_part( 'template-parts/content', 'home' ); ?>
+
+					<?php endwhile; ?>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<?php get_template_part( 'template-parts/sections' ); ?>
 
 		<?php do_action( 'kapow_website_after_main_content' ); ?>
 

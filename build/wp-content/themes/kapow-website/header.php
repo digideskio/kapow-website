@@ -40,30 +40,38 @@
 
 	<?php do_action( 'kapow_website_before_header' ); ?>
 
-	<div class="site-header-wrap wrap grey">
+	<div class="site-header-wrap wrap white">
 
 		<header class="site-header" role="banner">
 
 			<?php do_action( 'kapow_website_before_header_content' ); ?>
 
-			<nav id="site-navigation" class="site-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Main Menu', 'kapow-website' ); ?></button>
+			<div class="row">
 
-				<?php do_action( 'kapow_website_before_primary_nav' ); ?>
+				<div class="col sm12">
 
-				<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'primary',
-							'menu_id'        => 'primary-menu',
-							'container'      => false,
-						)
-					);
-				?>
+					<nav id="site-navigation" class="site-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Main Menu', 'kapow-website' ); ?></button>
 
-				<?php do_action( 'kapow_website_after_primary_nav' ); ?>
+						<?php do_action( 'kapow_website_before_primary_nav' ); ?>
 
-			</nav><!-- .site-navigation -->
+						<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'primary',
+									'menu_id'        => 'primary-menu',
+									'container'      => false,
+								)
+							);
+						?>
+
+						<?php do_action( 'kapow_website_after_primary_nav' ); ?>
+
+					</nav><!-- .site-navigation -->
+
+				</div>
+
+			</div>
 
 			<?php do_action( 'kapow_website_after_header_content' ); ?>
 

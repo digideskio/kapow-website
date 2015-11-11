@@ -85,6 +85,8 @@ if ( ! function_exists( 'kapow_website_theme_setup' ) ) :
 			'quote',
 			'link',
 		) );
+
+		add_image_size( 'icon', 280, 280, array( 'center', 'center' ) );
 	}
 	add_action( 'after_setup_theme', 'kapow_website_theme_setup' );
 endif;
