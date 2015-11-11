@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

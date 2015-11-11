@@ -4,6 +4,7 @@
 // Hide the menu on mobile, show on desktop.
 .primary-menu {
 	display: none;
+	position: relative;
 
 	@include kp-mq(sm) {
 		display: block;
@@ -15,6 +16,21 @@
 			display: block;
 		}
 	}
+	// Show sub-menu on hover/focus of a top tier menu item
+	& > li.menu-item-has-children {
+		@include kp-on-event {
+			.sub-menu {
+				display: block;
+				left: 0;
+				position: absolute;
+				top: 100%;
+			}
+		}
+	}
+}
+
+.sub-menu {
+	display: none;
 }
 
 // Show the menu toggle on mobile.

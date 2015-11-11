@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Function_Reference/register_post_type
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

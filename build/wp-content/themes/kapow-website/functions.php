@@ -1,8 +1,8 @@
 <?php
 /**
- * Kapow! Website theme dependencies.
+ * Kapow Website theme dependencies.
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

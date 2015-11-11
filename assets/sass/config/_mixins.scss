@@ -193,13 +193,19 @@
 }
 
 /// Horizontally and vertically centers block elements
-/// Important: you must have a parent element with `position: relative`.
+/// @param {Boolean} rel_parent - Set position relative on the parent element
 /// @group helpers
-@mixin kp-center-both {
+@mixin kp-center-both($rel_parent: false) {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	@if $rel_parent {
+		& {
+			position: relative;
+		}
+	}
 }
 
 /// Clearfix
@@ -221,17 +227,16 @@
 /// @param {String} $reset-style - Reset List Style
 /// @group helpers
 @mixin kp-reset-list($reset-style: false, $float: false) {
-
 	@if $reset-style {
 		list-style: none;
 	}
 	margin: 0;
 	padding: 0;
-	
+
 	li {
 		@if $float {
 			float: left;
-		}	
+		}
 	}
 }
 

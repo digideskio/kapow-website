@@ -1,4 +1,4 @@
-# Git Ignore for Kapow! Website
+# Git Ignore for Kapow Website
 # -----------------------------------------------------------------------------
 
 # Kapow! setup script
@@ -41,7 +41,7 @@ build/*
 !build/polyfills/
 !build/wp-content/
 !build/index.php
-!build/local-config-sample.php
+!build/local-config.php
 !build/robots.txt
 !build/wp-config.php
 !build/.htaccess
@@ -65,9 +65,10 @@ build/wp-content/themes/twentytwelve/
 build/wp-content/themes/twentythirteen/
 build/wp-content/themes/twentyfourteen/
 build/wp-content/themes/twentyfifteen/
+build/wp-content/themes/twentysixteen/
 
 # Themes - Custom
-build/wp-content/themes/kapow-website/css/
-build/wp-content/themes/kapow-website/js/
+build/wp-content/themes/kapow-website/assets/css/
+build/wp-content/themes/kapow-website/assets/js/
 build/wp-content/themes/kapow-website/style.css
 build/wp-content/themes/kapow-website/style.css.map

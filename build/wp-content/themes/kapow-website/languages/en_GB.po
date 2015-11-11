@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Kapow! Website\n"
-"POT-Creation-Date: 2015-09-17 11:32+0100\n"
-"PO-Revision-Date: 2015-09-17 11:32+0100\n"
+"Project-Id-Version: Kapow Website\n"
+"POT-Creation-Date: 2015-11-10 17:48+0000\n"
+"PO-Revision-Date: 2015-11-10 17:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -80,7 +80,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:57
+#: header.php:60
 msgid "Main Menu"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid ""
 "source URL."
 msgstr ""
 
-#: inc/meta-boxes.php:38
+#: inc/meta-boxes.php:36
 msgid "Example Meta Box"
 msgstr ""
 
@@ -220,11 +220,11 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:68 template-parts/content-page.php:37
+#: inc/template-tags.php:68 template-parts/content-page.php:40
 msgid "Edit"
 msgstr ""
 
-#: inc/theme-setup.php:31
+#: inc/theme-setup.php:35
 msgid "Primary Menu"
 msgstr ""
 
@@ -237,40 +237,40 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-parts/content-none.php:15
+#: template-parts/content-none.php:17
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:23
+#: template-parts/content-none.php:27
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:27
+#: template-parts/content-none.php:31
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:32
+#: template-parts/content-none.php:36
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:29 template-parts/content-single.php:33
-#: template-parts/content.php:41
+#: template-parts/content-page.php:31 template-parts/content-single.php:35
+#: template-parts/content.php:43
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content.php:32
+#: template-parts/content.php:34
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Kapow! Website"
+msgid "Kapow Website"
 msgstr ""
 
 #. Author of the plugin/theme

@@ -1,6 +1,6 @@
 {
     "name": "kapow-website",
-    "description": "Composer file for Kapow! Website",
+    "description": "Composer file for Kapow Website",
     "license": "GPL-2.0+",
     "type": "project",
     "keywords": [
@@ -15,7 +15,7 @@
         {
             "name": "Make Do",
             "email": "hello@kapow-website.com",
-            "homepage": "http://www.makedo.in",
+            "homepage": "http://www.makedo.net",
             "role": "Developer"
         }
     ],
@@ -27,14 +27,21 @@
         "wpackagist": {
             "type": "composer",
             "url": "http://wpackagist.org"
-        }
+        },
+		"humanmade/custom-meta-boxes": {
+	    	"type": "git",
+	    	"url": "https://github.com/humanmade/Custom-Meta-Boxes"
+	    }
     },
     "require": {
         "php": ">=5.3",
         "mnsami/composer-custom-directory-installer": "1.0.*",
         "monolog/monolog": "*",
         "johnpbloch/wordpress": "@stable",
-        "composer/installers": "@stable"
+        "composer/installers": "@stable",
+		"humanmade/custom-meta-boxes": "dev-master",
+		"wpackagist-plugin/restrict-content-by-role": "dev-trunk",
+		"wpackagist-plugin/restrict-dashboard-by-role": "dev-trunk"
     },
     "suggest": {
         "wp-cli/wp-cli": "@stable"
@@ -57,11 +64,15 @@
         }
     },
     "scripts": {
-        "generate-salts": [
-            "echo '<?php' > build/salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> build/salt.php"
-        ],
-        "post-create-project-cmd": [
-            "composer run generate-salts"
-        ]
+		"mu-loader": [
+	    	      "echo \"\nrequire_once plugin_dir_path( __FILE__ ) . 'humanmade/custom-meta-boxes/custom-meta-boxes.php';\" >> build/wp-content/mu-plugins/loader.php"
+	    ],
+	    "generate-salts": [
+	    	"echo '<?php' > build/salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> build/salt.php"
+	    ],
+	    "post-create-project-cmd": [
+	    	"composer run generate-salts",
+	    	"composer run mu-loader"
+	    ]
     }
 }

@@ -1,0 +1,48 @@
+// Grid styles
+// -----------------------------------------------------------------------------
+
+// Bourbon Grid
+// ------------------------------------
+// Grid classes for Bourbon + Neat that
+// use variables and media queries you
+// have defined in Kapow!
+// ------------------------------------
+@if $kp-framework == "bourbon" {
+    .row {
+        @include row;
+        @include outer-container($kp-base--row-width);
+        position: relative;
+    }
+
+    .col {
+        @include span-columns($kp-base--columns);
+        float: left;
+        margin-right: 0;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        position: relative;
+        $i: 1;
+        // Loop through the Kapow! breakpoints
+        // as defined in _vars-default.scss and
+        // generate the grid column classes.
+        // ------------------------------------
+        @each $b, $value in $kp-breakpoints {
+            @include kp-mq($b) {
+                @while $i <= $kp-base--columns {
+                    $perc: unquote(100 / ($kp-base--columns / $i) + "%");
+
+                    &.#{$b}#{$i} {
+                        @include span-columns($i);
+                    }
+
+                    &.offset-#{$b}#{$i} {
+                        margin-left: $perc;
+                    }
+                    $i: $i + 1;
+                }
+            }
+
+            $i: 1;
+        }
+    }
+}

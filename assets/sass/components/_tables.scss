@@ -2,23 +2,21 @@
 // --------------------------------------------------------------------------
 
 // Useful width helper classes
+// ------------------------------------
 // NB: Should be used on <th> & <td>
 // instead of hard coding width values
 // to prevent WCAG validation errors.
+//
+// This mixin creates classes for every
+// five percentage points e.g. .tbl-10
+// for 10%, .tbl-50 for 50% etc.
 // ------------------------------------
 
-.tbl-25 {
-	width: 25%;
-}
+@for $i from 1 through 100 {
 
-.tbl-50 {
-	width: 50%;
-}
-
-.tbl-75 {
-	width: 75%;
-}
-
-.tbl-100 {
-	width: 100%;
+	@if ($i % 5 == 0) {
+		.tbl-#{$i} {
+			width: #{$i}%;
+		}
+	}
 }

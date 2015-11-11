@@ -29,7 +29,7 @@ module.exports = {
 			message: '<%= siteInfo.fancy_name %> scripts processed!'
 		}
 	},
-	// Notify once styles are processewd & minified
+	// Notify once styles are processed & minified
 	styles: {
 		options: {
 			title: 'Styles',

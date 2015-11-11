@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Function_Reference/add_shortcode
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

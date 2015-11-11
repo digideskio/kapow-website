@@ -5,7 +5,7 @@
  * @link http://codex.wordpress.org/Custom_Headers
  * @link https://codex.wordpress.org/Custom_Backgrounds
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

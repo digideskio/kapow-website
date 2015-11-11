@@ -42,6 +42,10 @@
 
 // Margin
 // -------------------------------------
+.no-margin {
+	margin: 0;
+}
+
 .no-hmargin {
 	@include kp-no-hmargin;
 }
@@ -52,6 +56,10 @@
 
 // Padding
 // -------------------------------------
+.no-padding {
+	padding: 0;
+}
+
 .no-hpadding {
 	@include kp-no-hpadding;
 }
@@ -61,14 +69,20 @@
 }
 
 // Reset ul/ol list styles
-// The latter also resets the list style
 // -------------------------------------
+// Removes margin and padding
 .reset-list {
 	@include kp-reset-list;
 }
 
+// As above but with no list item style
 .reset-list-style {
 	@include kp-reset-list(true);
+}
+
+// As above but with float: left on list items
+.make-list-nav {
+	@include kp-reset-list(true, true);
 }
 
 // Hide only visually, but have it

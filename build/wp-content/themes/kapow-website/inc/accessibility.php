@@ -2,7 +2,7 @@
 /**
  * Accessibility (WCAG) improvements.
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

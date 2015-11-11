@@ -4,16 +4,18 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 	<header class="entry-header">
+
 		<?php do_action( 'kapow_website_featured_image' ); ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -34,7 +36,9 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+
 		<?php edit_post_link( esc_html__( 'Edit', 'kapow-website' ), '<span class="edit-link">', '</span>' ); ?>
+
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

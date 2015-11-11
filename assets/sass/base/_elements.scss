@@ -150,7 +150,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #eee;
+	border-top: 1px solid $kp-colour--grey-light;
 	margin: kp-rem(24px) 0;
 	padding: 0;
 }
@@ -165,7 +165,7 @@ i {}
 iframe {}
 
 img {
-	// Make responsive
+	// Make them responsive
 	height: auto;
 	max-width: 100%;
 

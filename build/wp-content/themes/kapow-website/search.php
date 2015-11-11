@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 get_header(); ?>
@@ -45,4 +45,5 @@ get_header(); ?>
 
 	</main><!-- .site-main -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

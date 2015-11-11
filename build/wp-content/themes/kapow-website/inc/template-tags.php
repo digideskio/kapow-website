@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 if ( ! function_exists( 'kapow_website_posted_on' ) ) :

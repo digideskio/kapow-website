@@ -4,18 +4,22 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
+
 		<?php do_action( 'kapow_website_featured_image' ); ?>
+
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'kapow-website' ); ?></h1>
+
 	</header><!-- .page-header -->
 
 	<div class="page-content">
+
 		<?php do_action( 'kapow_website_before_post_content' ); ?>
 
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>

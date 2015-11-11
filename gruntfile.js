@@ -3,7 +3,7 @@ module.exports = function( grunt ) {
 		init: true,
 		jitGrunt: {
 			jitGrunt: true,
-			// These mappings help Grunt play nicely with certain plugins
+			// These staticMappings help Grunt play nicely with certain plugins
 			staticMappings: {
 				scsslint: 'grunt-scss-lint',
 				sprite: 'grunt-spritesmith',
@@ -17,32 +17,49 @@ module.exports = function( grunt ) {
 		// -----------------------------------------------------------------------------
 		data: {
 			// -------------------------------------
-			// Site specific settings
+			// Project specific settings
 			// -------------------------------------
 			siteInfo: {
-				fancy_name: 'Kapow! Website', // The 'fancy' name for your project e.g. 'My First Website'
-				docs_path: 'docs', // Documentation path relative to the project root - NO trailing slash
-				reports_path: 'reports', // Reports path relative to the project root - NO trailing slash
-				assets_path: 'assets', // Assets path relative to the project root - NO trailing slash
-				img_dir: 'img', // Image assets directory
-				js_dir: 'js', // Javascript assets directory
-				sass_dir: 'sass', // Sass assets directory
-				css_dir: 'css', // CSS assets directory
-				fonts_dir: 'fonts', // Font assets directory
-				sass_file: 'style' // Name of your main Sass file and consequent CSS file
+				// The 'fancy' name for your project e.g. 'My First Website'
+				fancy_name: 'Kapow Website',
+				// Documentation path relative to the project root - NO trailing slash
+				docs_path: 'docs',
+				// Reports path relative to the project root - NO trailing slash
+				reports_path: 'reports',
+				// Assets path relative to the project root - NO trailing slash
+				assets_path: 'assets',
+				// Image assets directory
+				img_dir: 'img',
+				// Javascript assets directory
+				js_dir: 'js',
+				// Sass assets directory
+				sass_dir: 'sass',
+				// CSS assets directory
+				css_dir: 'css',
+				// Font assets directory
+				fonts_dir: 'fonts',
+				// Name of your main Sass file and consequent CSS file
+				sass_file: 'style'
 			},
 
 			// -------------------------------------
 			// WordPress specific settings
 			// -------------------------------------
 			wpInfo: {
-				wp_content: 'build/wp-content', // Path to wp-content relative to the project root
-				theme_name: 'kapow-website', // WordPress theme directory name
-				assets_dir: 'assets', // Theme assets directory
-				img_dir: 'img', // Theme images directory
-				js_dir: 'js', // Theme Javascript directory
-				css_dir: 'css', // Theme CSS directory
-				fonts_dir: 'fonts', // Theme fonts directory
+				// Path to wp-content relative to the project root
+				wp_content: 'build/wp-content',
+				// WordPress theme directory name
+				theme_name: 'kapow-website',
+				// Theme assets directory
+				assets_dir: 'assets',
+				// Theme images directory
+				img_dir: 'img',
+				// Theme Javascript directory
+				js_dir: 'js',
+				// Theme CSS directory
+				css_dir: 'css',
+				// Theme fonts directory
+				fonts_dir: 'fonts',
 			},
 
 			// -------------------------------------
@@ -91,7 +108,7 @@ module.exports = function( grunt ) {
 			// NB: No need for 'bower_components/'!
 			// -------------------------------------
 			bowerSync: [
-				// 'fontawesome/fonts',
+				// 'package-name/path/to/file',
 			]
 		}
 	} );

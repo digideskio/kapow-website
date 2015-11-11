@@ -6,7 +6,8 @@
 .responsive-embed {
 	height: 0;
 	margin: kp-rem(24px) 0;
-	padding-bottom: 50%; // aspect ratio
+	// 16:9 aspect ratio. Change to 75% for 4:3
+	padding-bottom: 56.25%;
 	position: relative;
 	overflow: hidden;
 

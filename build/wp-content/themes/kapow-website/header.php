@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 ?><!DOCTYPE html>
@@ -45,16 +45,20 @@
 		<?php do_action( 'kapow_website_before_header_content' ); ?>
 
 		<div class="site-branding">
+
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php endif; ?>
+
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="site-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Main Menu', 'kapow-website' ); ?></button>
+
 			<?php do_action( 'kapow_website_before_primary_nav' ); ?>
 
 			<?php
@@ -68,6 +72,7 @@
 			?>
 
 			<?php do_action( 'kapow_website_after_primary_nav' ); ?>
+
 		</nav><!-- .site-navigation -->
 
 		<?php do_action( 'kapow_website_after_header_content' ); ?>

@@ -2,7 +2,7 @@
 /**
  * Compatibility with specific plugins.
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

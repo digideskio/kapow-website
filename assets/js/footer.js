@@ -6,7 +6,7 @@
 jQuery( function( $ ) {
 
   // Skip Link Focus Fix - Helps with accessibility for keyboard only users.
-  // Learn more: https://github.com/Automattic/Kapow! Website/pull/136
+  // Learn more: https://github.com/Automattic/Kapow Website/pull/136
 
   var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
     is_opera = navigator.userAgent.toLowerCase().indexOf( 'opera' ) > -1,

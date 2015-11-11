@@ -73,6 +73,7 @@ module.exports = {
 			'postcss',
 			'cssmin',
 			'maxfilesize:css',
+			'selector4096',
 			'copy:main_sourcemap',
 			'copy:other_sourcemaps',
 			// 'sassdoc',

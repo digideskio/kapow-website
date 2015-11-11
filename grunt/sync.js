@@ -1,7 +1,7 @@
 // Sync Task - https://github.com/tomusdrw/grunt-sync
 // ----------------------------------------------------------------------------
 module.exports = {
-	// Copy bower assets into the theme
+	// Sync bower assets into the theme
 	bower_sync: {
 		files: [ {
 			cwd: 'bower_components',

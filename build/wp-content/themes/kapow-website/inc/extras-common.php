@@ -2,7 +2,7 @@
 /**
  * Custom, commonly used functions that act independently of the theme templates.
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**
@@ -20,7 +20,7 @@ function kapow_website_body_classes( $classes ) {
 	}
 
 	if ( is_singular() ) {
-		$classes[] = $post->post_name;
+		$classes[] = 'slug-' . $post->post_name;
 	}
 
 	return $classes;

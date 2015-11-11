@@ -1,10 +1,10 @@
 <?php
 /**
- * Kapow! Website Theme Customizer.
+ * Kapow Website Theme Customizer.
  *
  * @link https://codex.wordpress.org/Theme_Customization_API
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 /**

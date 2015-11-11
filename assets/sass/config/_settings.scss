@@ -7,25 +7,24 @@
 // ensure integration with Kapow! These can be found in settings/plumbing.
 //
 // Change the value of $kp-framework to the framework you wish to use for the
-// project, then add your additional framework setting overrides underneath.
-//
-// Commonly used overrides should be added as defaults over time.
+// project, then add your additional framework setting overrides and additions
+// underneath. Commonly used overrides should be added as defaults over time.
 // --------------------------------------------------------------------------
 
 // Either 'bootstrap', 'foundation' or 'bourbon'. Defaults to no framework
-$kp-framework: bourbon !default;
+$kp-framework: noframework !default;
 
 // Import our 'plumbing' settings so Kapow!'s Sass variables override some of
 // the important framework settings such as columns, row width etc
 @import "settings/plumbing";
 
-// Framework specific overrides
+// Framework Overrides
 // --------------------------------------------------------------------------
 
 // Bootstrap
 // -------------------------------------
 @if $kp-framework == "bootstrap" {
-	// Add overrides here.
+	// Add your own!
 	.container {
 		max-width: $kp-base--container-width;
 		width: auto;
@@ -35,5 +34,11 @@ $kp-framework: bourbon !default;
 // Foundation
 // -------------------------------------
 @if $kp-framework == "foundation" {
-	// Add overrides here.
+	// Add your own!
+}
+
+// Bourbon
+// -------------------------------------
+@if $kp-framework == "bourbon" {
+	// Add your own!
 }

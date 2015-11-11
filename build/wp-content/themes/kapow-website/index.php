@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Kapow! Website
+ * @package Kapow Website
  */
 
 get_header(); ?>
@@ -48,4 +48,5 @@ get_header(); ?>
 
 	</main><!-- .site-main -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -30,6 +30,10 @@ select {
 	padding: kp-rem(5px);
 }
 
+textarea {
+	height: 150px;
+}
+
 // Submit buttons
 // -------------------------------------
 [type="reset"],
