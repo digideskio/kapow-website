@@ -45,6 +45,7 @@ Text Domain: kapow-website
 @import "base/base";
 @import "base/elements";
 @import "base/fonts";
+@import "base/grids";
 @import "base/helpers";
 @import "base/sprites";
 @import "base/iconography";
@@ -70,10 +71,13 @@ Text Domain: kapow-website
 @import "components/navigation";
 @import "components/pagination";
 @import "components/panels";
+@import "components/sections";
 @import "components/sliders";
+@import "components/splash";
 @import "components/tabs";
 @import "components/tables";
 @import "components/widgets";
+@import "components/wraps";
 
 // Pages
 // -------------------------------------

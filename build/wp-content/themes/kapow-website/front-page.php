@@ -15,27 +15,42 @@ get_header(); ?>
 
 		<?php do_action( 'kapow_website_before_main_content' ); ?>
 
-		<?php get_template_part( 'template-parts/splash' ); ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 
-		<section class="intro-wrap wrap white" aria-labelledby="intro-section-title">
+			<?php get_template_part( 'template-parts/splash' ); ?>
 
-			<div class="intro row">
+			<div class="intro-wrap wrap white">
 
-				<div class="col sm12">
+				<section class="intro" aria-labelledby="intro-section-title">
 
-					<?php while ( have_posts() ) : the_post(); ?>
+				<div class="row">
 
-						<?php get_template_part( 'template-parts/content', 'home' ); ?>
+					<div class="col sm12">
 
-					<?php endwhile; ?>
+						<?php while ( have_posts() ) : the_post(); ?>
 
-				</div>
+							<div class="entry-content">
+
+								<?php do_action( 'kapow_website_before_post_content' ); ?>
+
+								<?php the_content(); ?>
+								<?php edit_post_link( esc_html__( 'Edit', 'kapow-website' ), '<span class="edit-link">', '</span>' ); ?>
+
+								<?php do_action( 'kapow_website_after_post_content' ); ?>
+
+							</div><!-- .entry-content -->
+
+						<?php endwhile; ?>
+
+					</div>
+
+				</section>
 
 			</div>
 
-		</section>
+			<?php get_template_part( 'template-parts/sections' ); ?>
 
-		<?php get_template_part( 'template-parts/sections' ); ?>
+		</article><!-- #post-## -->
 
 		<?php do_action( 'kapow_website_after_main_content' ); ?>
 

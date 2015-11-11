@@ -1,4 +1,10 @@
 // Footer region styles
 // -----------------------------------------------------------------------------
 
-[role="contentinfo"] {}
+[role="contentinfo"] {
+	text-align: center;
+
+	p + p {
+		margin-bottom: 0;
+	}
+}

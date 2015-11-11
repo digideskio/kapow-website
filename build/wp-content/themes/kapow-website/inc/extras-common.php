@@ -34,7 +34,28 @@ add_filter( 'body_class', 'kapow_website_body_classes' );
  * @return string
  */
 function kapow_website_remove_image_ptags( $content ) {
-	return preg_replace( '/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content );
+	$content = preg_replace( '/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content );
+	$content = preg_replace('/<p>\s*(<iframe .*>*.<\/iframe>)\s*<\/p>/iU', '\1', $content);
+
+	return $content;
 }
 add_filter( 'the_content' , 'kapow_website_remove_image_ptags' );
 
+/**
+ * Place a wrapper div around <iframe> and <embed> content
+ * @param  string $content
+ * @return string
+ */
+function kapow_website_rwd_embed_wrapper($content)
+{
+    $pattern = "~<iframe.*</iframe>|<embed.*</embed>~";
+    preg_match_all($pattern, $content, $matches);
+
+    foreach ($matches[0] as $match) {
+        $wrappedframe = "<div class='responsive-embed'>" . $match . "</div>";
+        $content = str_replace($match, $wrappedframe, $content);
+    }
+
+    return $content;
+}
+add_filter("the_content", "kapow_website_rwd_embed_wrapper");

@@ -12,7 +12,7 @@ $kp-base--columns: 12 !default;
 /// Base - Container Width
 /// @type Number
 /// @group base
-$kp-base--container-width: 1500px !default;
+$kp-base--container-width: 1920px !default;
 
 /// Base - Font Size
 /// @type Number
@@ -104,12 +104,12 @@ $kp-colour--green: #080 !default;
 /// Colour - Grey
 /// @type Color
 /// @group colours
-$kp-colour--grey: #333 !default;
+$kp-colour--grey: #eee !default;
 
 /// Colour - Grey Light
 /// @type Color
 /// @group colours
-$kp-colour--grey-light: #eee !default;
+$kp-colour--grey-light: #fafafa !default;
 
 /// Colour - Purple
 /// @type Color
@@ -157,22 +157,22 @@ $kp-colour-branding--tertiary: $kp-colour--white !default;
 /// Body - Background
 /// @type Color
 /// @group colours
-$kp-colour-body--background: $kp-colour--red-dark !default;
+$kp-colour-body--background: $kp-colour--white !default;
 
 /// Content - Copy
 /// @type Color
 /// @group colours
-$kp-colour-content--copy: $kp-colour--white !default;
+$kp-colour-content--copy: $kp-colour--black !default;
 
 /// Content - Heading
 /// @type Color
 /// @group colours
-$kp-colour-content--heading: $kp-colour--white !default;
+$kp-colour-content--heading: $kp-colour--black !default;
 
 /// Content - Link
 /// @type Color
 /// @group colours
-$kp-colour-content--link: $kp-colour--yellow !default;
+$kp-colour-content--link: $kp-colour--red !default;
 
 /// Content - Link Hover
 /// @type Color

@@ -108,7 +108,7 @@ embed,
 iframe,
 object,
 pre {
-	margin: kp-rem(24px) auto;
+	margin: 0 auto;
 	// Keep the contents inside the container
 	max-width: 100%;
 }
@@ -246,7 +246,7 @@ param {}
 
 pre {
 	background-color: $kp-colour-content--pre-bg;
-	margin: kp-rem(24px);
+	margin: 0;
 	overflow: auto;
 	padding: kp-rem(24px);
 }

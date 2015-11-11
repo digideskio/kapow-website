@@ -14,18 +14,25 @@ foreach ( $section_data as $section ) {
 		$number = ( 0 === $i % 2 ) ? 'even': 'odd';
 
 		$title   = $section['section-title'];
-		$content = apply_filters( 'the-content', $section['section-content'] );
 		$image   = wp_get_attachment_image_src( $section['section-image'], 'icon' )[0];
 		$link    = $section['section-button-one-link'];
 		$label   = $section['section-button-one-label'];
 
+		$content = $section['section-content'];
+
+		// Tag the button onto the content - cleaner this way.
+		if ( ! empty( $link ) && ! empty( $label ) ) {
+			$content .= '<p><a class="section-link button" href="' . esc_url( $link ) . '" title="Click to ' . esc_attr( $label ) . '">' . esc_attr( $label ) . '</a></p>';
+		}
+
+		$content = apply_filters( 'the_content', $content );
 	?>
 
 	<div class="kapow-section-<?php echo esc_attr( $i ); ?>-wrap wrap <?php echo esc_attr( $number ); ?>">
 
 		<section class="kapow-section" aria-labelledby="kapow-section-<?php echo esc_attr( $i ); ?>-title">
 
-			<div class="row section-title">
+			<div class="row">
 
 				<div class="col sm12">
 
@@ -35,17 +42,21 @@ foreach ( $section_data as $section ) {
 
 			</div>
 
-			<div class="row section-content">
+			<div class="row">
 
 			<?php if ( 'odd' === $number && ! empty( $image ) ) { ?>
 
 				<div class="col sm9">
+
 					<img class="section-img mobile-only" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $title ); ?>" />
-					<?php echo wp_kses_post( wpautop( $content ) ); ?>
+
+					<div class="section-content">
+						<?php echo wpautop( $content ); ?>
+					</div>
 				</div>
 
 				<div class="col sm3">
-					<img class="section-img" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $title ); ?>" />
+					<img class="section-img desktop-only" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $title ); ?>" />
 				</div>
 
 			<?php } elseif ( 'even' === $number && ! empty( $image ) ) { ?>
@@ -55,30 +66,22 @@ foreach ( $section_data as $section ) {
 				</div>
 
 				<div class="col sm9">
-					<?php echo wp_kses_post( wpautop( $content ) ); ?>
+					<div class="section-content">
+						<?php echo wpautop( $content ); ?>
+					</div>
 				</div>
 
 			<?php } else { ?>
 
 				<div class="col sm12">
-					<?php echo wp_kses_post( wpautop( $content ) ); ?>
+					<div class="section-content">
+						<?php echo wpautop( $content ); ?>
+					</div>
 				</div>
 
 			<?php } ?>
 
 			</div>
-
-			<?php if ( ! empty( $link ) && ! empty( $label ) ) { ?>
-				<div class="row section-link">
-
-					<div class="col sm12">
-
-						<a href="<?php echo esc_url( $link ); ?>" title="Click to <?php echo esc_attr( $label ); ?>"><?php echo esc_attr( $label ); ?></a>
-
-					</div>
-
-				</div>
-			<?php } ?>
 
 		</section>
 

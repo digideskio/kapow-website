@@ -107,12 +107,8 @@ h6 {
 }
 
 html {
-	font-size: kp-rem($kp-font-size--large);
+	font-size: kp-rem($kp-font-size--medium);
 	text-rendering: optimizeLegibility;
-
-	@include kp-mq(md) {
-		font-size: kp-rem($kp-font-size--medium);
-	}
 }
 
 ins,

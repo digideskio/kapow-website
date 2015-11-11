@@ -1,0 +1,35 @@
+// Content section styles
+// --------------------------------------------------------------------------
+
+.section-title {
+	margin: 0 0 1.5rem;
+}
+
+.section-img {
+	display: block;
+	margin: 1.5rem auto 3rem;
+
+	@include kp-mq(sm) {
+		margin: 0 auto;
+	}
+
+	&.mobile-only {
+		display: block;
+
+		@include kp-mq(sm) {
+			display: none;
+		}
+	}
+
+	&.desktop-only {
+		display: none;
+
+		@include kp-mq(sm) {
+			display: block;
+		}
+	}
+}
+
+.section-link {
+	display: inline-block;
+}

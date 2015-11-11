@@ -14,7 +14,7 @@
 
 	<?php do_action( 'kapow_website_before_footer' ); ?>
 
-	<div class="footer-wrap wrap dark">
+	<div class="footer-wrap wrap dark thin">
 
 		<footer class="site-footer" role="contentinfo">
 
@@ -24,9 +24,7 @@
 
 				<div class="col sm12">
 
-					<p><a href="<?php echo esc_url( __( 'https://kapow.io/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Built with %s', 'kapow-website' ), 'Kapow!' ); ?></a>
-						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kapow-website' ), 'WordPress' ); ?></a></p>
-					<p><a href="<?php echo esc_url( __( 'https://makedo.net/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Created and maintained by %s', 'kapow-website' ), 'Make Do' ); ?></a></p></p>
+					<p><a href="<?php echo esc_url( __( 'https://kapow.io/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Built with %s', 'kapow-website' ), 'Kapow!' ); ?></a> - <a href="<?php echo esc_url( __( 'https://makedo.net/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Created and maintained by %s', 'kapow-website' ), 'Make Do' ); ?></a> - <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kapow-website' ), 'WordPress' ); ?></a></p>
 
 				</div>
 

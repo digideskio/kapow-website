@@ -1,0 +1,36 @@
+// Content wrap styles
+// --------------------------------------------------------------------------
+
+.wrap {
+	clear: both;
+	padding: 4rem 0;
+	position: relative;
+	// Colours.
+	&.dark {
+		background-color: $kp-colour--grey;
+	}
+
+	&.light,
+	&.odd {
+		background-color: $kp-colour--grey-light;
+		border-bottom: 1px solid #f5f5f5;
+		border-top: 1px solid #f5f5f5;
+	}
+
+	&.white,
+	&.even {
+		background-color: $kp-colour--white;
+	}
+	// Sizing
+	&.fat {
+		padding: 6rem 0;
+	}
+
+	&.thin {
+		padding: 1.5rem 0;
+	}
+
+	&.zero {
+		padding: 0;
+	}
+}

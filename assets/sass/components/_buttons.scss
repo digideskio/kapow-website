@@ -1,2 +1,16 @@
 // Button styles
 // --------------------------------------------------------------------------
+
+.button {
+	background-color: $kp-colour--red;
+	color: $kp-colour--white;
+	display: inline-block;
+	letter-spacing: 0.5px;
+	padding: 0.5rem 1.5rem;
+	text-decoration: none;
+
+	@include kp-on-event {
+		background-color: $kp-colour--red-dark;
+		color: $kp-colour--white;
+	}
+}

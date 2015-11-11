@@ -3,6 +3,7 @@
 
 // Hide the menu on mobile, show on desktop.
 .primary-menu {
+	@include kp-reset-list(true, true);
 	display: none;
 	position: relative;
 
@@ -26,6 +27,22 @@
 				top: 100%;
 			}
 		}
+	}
+
+	a {
+		display: inline-block;
+		padding: 1rem;
+		text-decoration: none;
+
+		@include kp-on-event {
+			background-color: $kp-colour--red;
+			color: $kp-colour--white;
+		}
+	}
+
+	.current-menu-item a {
+		background-color: $kp-colour--red;
+		color: $kp-colour--white;
 	}
 }
 
