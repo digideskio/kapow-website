@@ -119,7 +119,17 @@ $kp-colour--purple: #800080 !default;
 /// Colour - Red
 /// @type Color
 /// @group colours
-$kp-colour--red: #f00 !default;
+$kp-colour--red: #C80000 !default;
+
+/// Colour - Red Dark
+/// @type Color
+/// @group colours
+$kp-colour--red-dark: #480000 !default;
+
+/// Colour - Red
+/// @type Color
+/// @group colours
+$kp-colour--yellow: #FFEB00 !default;
 
 /// Colour - White
 /// @type Color
@@ -132,32 +142,37 @@ $kp-colour--white: #fff !default;
 /// Branding - Primary
 /// @type Color
 /// @group colours
-$kp-colour-branding--primary: $kp-colour--black !default;
+$kp-colour-branding--primary: $kp-colour--red !default;
 
 /// Branding - Secondary
 /// @type Color
 /// @group colours
-$kp-colour-branding--secondary: $kp-colour--black !default;
+$kp-colour-branding--secondary: $kp-colour--yellow !default;
 
 /// Branding - Tertiary
 /// @type Color
 /// @group colours
-$kp-colour-branding--tertiary: $kp-colour--black !default;
+$kp-colour-branding--tertiary: $kp-colour--white !default;
+
+/// Body - Background
+/// @type Color
+/// @group colours
+$kp-colour-body--background: $kp-colour--red-dark !default;
 
 /// Content - Copy
 /// @type Color
 /// @group colours
-$kp-colour-content--copy: $kp-colour--grey !default;
+$kp-colour-content--copy: $kp-colour--white !default;
 
 /// Content - Heading
 /// @type Color
 /// @group colours
-$kp-colour-content--heading: $kp-colour--black !default;
+$kp-colour-content--heading: $kp-colour--white !default;
 
 /// Content - Link
 /// @type Color
 /// @group colours
-$kp-colour-content--link: $kp-colour--red !default;
+$kp-colour-content--link: $kp-colour--yellow !default;
 
 /// Content - Link Hover
 /// @type Color

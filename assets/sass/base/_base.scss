@@ -23,6 +23,12 @@
 	text-shadow: none;
 }
 
+// Document body
+// -------------------------------------
+body {
+	background-color: $kp-colour-body--background;
+}
+
 // Outer container width
 // -------------------------------------
 .site {

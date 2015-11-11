@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------
 
 // Either 'bootstrap', 'foundation' or 'bourbon'. Defaults to no framework
-$kp-framework: noframework !default;
+$kp-framework: bourbon !default;
 
 // Import our 'plumbing' settings so Kapow!'s Sass variables override some of
 // the important framework settings such as columns, row width etc
