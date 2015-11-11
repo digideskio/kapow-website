@@ -17,15 +17,16 @@ module.exports = {
 	//   ]
 	// },
 
-	// // Process theme code
-	// code_theme: {
-	//   files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
-	//   tasks: [
-	//     'phplint:theme',
-	//     // 'phpdoc:theme',
-	//     'notify:code_theme'
-	//   ]
-	// },
+	// Process theme code
+	code_theme: {
+		files: [ '<%= wpInfo.wp_content %>/themes/<%= wpInfo.theme_name %>/**/*.php' ],
+		tasks: [
+			'phplint:theme',
+			// 'phpdoc:theme',
+			'notify:code_theme'
+		]
+	},
+
 
 	// Process JPG images
 	images_jpg: {
