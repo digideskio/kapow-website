@@ -15,6 +15,8 @@ get_header(); ?>
 
 		<?php do_action( 'kapow_website_before_main_content' ); ?>
 
+		<?php get_template_part( 'template-parts', 'splash' ); ?>
+
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
