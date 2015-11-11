@@ -19,7 +19,7 @@
 		<?php do_action( 'kapow_website_before_footer_content' ); ?>
 
 		<div class="site-info">
-		<p>&copy; <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'All rights reserved.', 'kapow-website' ); ?> <span class="sep"> | </span>
+		<p><a href="<?php echo esc_url( __( 'https://kapow.io/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Built with %s', 'kapow-website' ), 'Kapow!' ); ?></a>.
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kapow-website' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kapow-website' ), 'WordPress' ); ?></a></p>
 		</div><!-- .site-info -->
 
