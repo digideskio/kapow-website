@@ -40,7 +40,7 @@
 
 	<?php do_action( 'kapow_website_before_header' ); ?>
 
-	<div class="site-header-wrap wrap white">
+	<div class="site-header-wrap wrap white thin">
 
 		<header class="site-header" role="banner">
 

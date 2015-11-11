@@ -5,7 +5,7 @@
  * @package Kapow Website
  */
 ?>
-	<div class="splash-wrap wrap grey">
+	<div class="splash-wrap wrap light fat">
 
 		<section class="splash row" aria-labelledby="splash-section-title">
 

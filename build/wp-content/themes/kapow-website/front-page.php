@@ -17,7 +17,7 @@ get_header(); ?>
 
 		<?php get_template_part( 'template-parts/splash' ); ?>
 
-		<section class="intro-wrap wrap grey" aria-labelledby="intro-section-title">
+		<section class="intro-wrap wrap white" aria-labelledby="intro-section-title">
 
 			<div class="intro row">
 
