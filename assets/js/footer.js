@@ -34,6 +34,15 @@ jQuery( function( $ ) {
 
   }
 
+  // Scroll to anchor
+  // function scrollToAnchor( aid ){
+  //     var tag = $("a[name='"+ aid +"']");
+  //     $('html,body').animate({scrollTop: tag.offset().top},'slow');
+  // }
+
+  // scrollToAnchor('id3');
+
+
 }( jQuery ) );
 
 // Window Load

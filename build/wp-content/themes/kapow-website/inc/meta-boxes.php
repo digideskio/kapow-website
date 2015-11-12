@@ -27,6 +27,13 @@ function kapow_website_create_meta_boxes( array $meta_boxes ) {
 			'id'   => 'section-title',
 			'name' => __( 'Title', 'kapow-website' ),
 			'type' => 'text',
+			'cols' => 6,
+		),
+		array(
+			'id'   => 'section-anchor',
+			'name' => __( 'Anchor', 'kapow-website' ),
+			'type' => 'text',
+			'cols' => 6,
 		),
 		array(
 			'id'   => 'section-content',
@@ -59,7 +66,7 @@ function kapow_website_create_meta_boxes( array $meta_boxes ) {
 	$home_sections = array(
 		array(
 			'id'   => 'home-section',
-			'name' => __( 'Home Section', 'kapow-website' ),
+			'name' => __( 'Sections', 'kapow-website' ),
 			'type' => 'group',
 			'fields' => $home_fields,
 			'repeatable' => true,
@@ -68,7 +75,7 @@ function kapow_website_create_meta_boxes( array $meta_boxes ) {
 	);
 
 	$meta_boxes[] = array(
-		'title'    => __( 'Homepage Sections', 'kapow-website' ),
+		'title'    => __( 'Homepage Content', 'kapow-website' ),
 		'pages'    => array( 'page' ),
 		'show_on'  => array( 'id' => array( '2' ) ),
 		'context'  => 'normal',

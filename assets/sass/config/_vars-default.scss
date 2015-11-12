@@ -270,7 +270,7 @@ $kp-font-stack--copy: $kp-font-stack--sans-serif;
 /// Font Stack - Heading
 /// @type String
 /// @group typography
-$kp-font-stack--heading: $kp-font-stack--sans-serif;
+$kp-font-stack--heading: "Helsinki", sans-serif;
 
 // Font Folder
 // -------------------------------------
@@ -304,32 +304,32 @@ $kp-font-weight--normal: 400 !default;
 /// Font Size - Copy Large
 /// @type Number
 /// @group typography
-$kp-font-size--large: 18px !default;
+$kp-font-size--large: 24px !default;
 
 /// Font Size - Copy Medium
 /// @type Number
 /// @group typography
-$kp-font-size--medium: 16px !default;
+$kp-font-size--medium: 18px !default;
 
 /// Font Size - Copy Small
 /// @type Number
 /// @group typography
-$kp-font-size--small: 14px !default;
+$kp-font-size--small: 16px !default;
 
 /// Font Size - Heading 1
 /// @type Number
 /// @group typography
-$kp-font-size--h1: 36px !default;
+$kp-font-size--h1: 50px !default;
 
 /// Font Size - Heading 2
 /// @type Number
 /// @group typography
-$kp-font-size--h2: 32px !default;
+$kp-font-size--h2: 36px !default;
 
 /// Font Size - Heading 3
 /// @type Number
 /// @group typography
-$kp-font-size--h3: 28px !default;
+$kp-font-size--h3: 30px !default;
 
 /// Font Size - Heading 4
 /// @type Number
@@ -339,12 +339,12 @@ $kp-font-size--h4: 26px !default;
 /// Font Size - Heading 5
 /// @type Number
 /// @group typography
-$kp-font-size--h5: 24px !default;
+$kp-font-size--h5: 26px !default;
 
 /// Font Size - Heading 6
 /// @type Number
 /// @group typography
-$kp-font-size--h6: 22px !default;
+$kp-font-size--h6: 26px !default;
 
 // Line Heights
 // -------------------------------------

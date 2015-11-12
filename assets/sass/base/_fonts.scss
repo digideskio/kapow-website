@@ -1,25 +1,19 @@
 // @font-face declarations
 // -----------------------------------------------------------------------------
 
-// // Font Awesome
-// // -------------------------------------
-// // NB: Make sure you're including FA in
-// // the main assets/sass/style.scss file.
-// // -------------------------------------
-// @font-face {
-//   font-family: 'FontAwesome';
-//   // Open Type
-//   src: url("#{$kp-font--folder}/fontawesome-webfont.eot?v=4.3.0");
-//   // Open Type (IE)
-//   src: url("#{$kp-font--folder}/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype");
-//   // Woff 2
-//   src: url("#{$kp-font--folder}/fontawesome-webfont.woff2?v=4.3.0") format("woff2");
-//   // Woff
-//   src: url("#{$kp-font--folder}/fontawesome-webfont.woff?v=4.3.0") format("woff");
-//   // True Type
-//   src: url("#{$kp-font--folder}/fontawesome-webfont.ttf?v=4.3.0") format("truetype");
-//   // SVG
-//   src: url("#{$kp-font--folder}/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+	font-family: 'Bangers';
+	src: url("assets/fonts/Bangers.eot"); /* IE9 Compat Modes */
+	src: url("assets/fonts/Bangers.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Bangers.woff") format("woff"), url("assets/fonts/Bangers.ttf") format("truetype"), url("assets/fonts/Bangers.svg#e2cd9319c3b89bc48c5bfb8067cf1d2d") format("svg"); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+@font-face {
+	font-family: 'Helsinki';
+	src: url("assets/fonts/helsinki.eot"); /* IE9 Compat Modes */
+	src: url("assets/fonts/helsinki.eot?#iefix") format("embedded-opentype"), url("assets/fonts/helsinki.woff") format("woff"), url("assets/fonts/helsinki.ttf") format("truetype"), url("assets/fonts/helsinki.svg#8449280a23f8c4fcfb13469f6dc19592") format("svg"); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 400;
+}

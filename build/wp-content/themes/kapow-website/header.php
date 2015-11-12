@@ -27,6 +27,8 @@
 
 	<?php wp_head(); ?>
 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Roboto:400,400italic,700,700italic|Lato:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>assets/js/header_ie.min.js"></script>
 	<![endif]-->
